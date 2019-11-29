@@ -61,6 +61,7 @@ def data_loader (root_path):
 def preprocessing(data): 
     print('Preprocessing start')
     # 자유롭게 작성해주시면 됩니다.
+    print(data.shape)
     X = np.concatenate([np.concatenate([data[:,0],data[:,1]],axis=1)
                     ,np.concatenate([data[:,2],data[:,3]],axis=1)],axis=2)
     X =  np.expand_dims(X, axis=3)
